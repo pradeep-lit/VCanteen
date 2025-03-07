@@ -13,7 +13,7 @@ class ChooseLocationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
-        val locationList= arrayOf("Karachi","Lahore","Islamabad","Quetta","Peshawar","Faisalabad")
+        val locationList= arrayOf("K. G. Mittal College ( College )", "K. G. Mittal College (Higher Secondary section)")
         val adapter=ArrayAdapter(this,android.R.layout.simple_list_item_1,locationList)
         val autoCompleteTextView=binding.listOfLocation
         autoCompleteTextView.setAdapter(adapter)
